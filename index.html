@@ -16,6 +16,8 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/payment.css">
+  <link rel="stylesheet" href="./assets/css/animations.css">
 
   <!--
     - google font link
@@ -37,21 +39,21 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar section-animate" data-sidebar>
 
-      <div class="sidebar-info">
+      <div class="sidebar-info scale-in">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Maxime KELI " width="80">
+        <figure class="avatar-box image-zoom">
+          <img src="./assets/images/my-avatar.png" alt="Maxime KELI" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Maxime Dzidula KELI">Maxime Dzidula KELI</h1>
+          <h1 class="name gradient-text" title="Maxime Dzidula KELI">Maxime Dzidula KELI</h1>
 
-          <p class="title">Geospatial Software developer</p>
+          <p class="title rainbow-text">Geospatial Software developer</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <button class="info_more-btn button-animate glow-effect" data-sidebar-btn>
           <span>Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
@@ -59,13 +61,13 @@
 
       </div>
 
-      <div class="sidebar-info_more">
+      <div class="sidebar-info_more slide-in-right">
 
-        <div class="separator"></div>
+        <div class="separator gradient-bg"></div>
 
         <ul class="contacts-list">
 
-          <li class="contact-item">
+          <li class="contact-item hover-float glow-effect">
 
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
@@ -79,7 +81,7 @@
 
           </li>
 
-          <li class="contact-item">
+          <li class="contact-item hover-float glow-effect">
 
             <div class="icon-box">
               <ion-icon name="MY PORTFOLIO"></ion-icon>
@@ -93,7 +95,7 @@
 
           </li>
 
-          <li class="contact-item">
+          <li class="contact-item hover-float glow-effect">
 
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
@@ -107,7 +109,7 @@
 
           </li>
 
-          <li class="contact-item">
+          <li class="contact-item hover-float glow-effect">
 
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
@@ -123,24 +125,24 @@
 
         </ul>
 
-        <div class="separator"></div>
+        <div class="separator gradient-bg"></div>
 
         <ul class="social-list">
 
-          <li class="social-item">
-            <a href="#" class="social-link">
+          <li class="social-item hover-float">
+            <a href="#" class="social-link neon-effect">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
-          <li class="social-item">
-            <a href="#" class="social-link">
+          <li class="social-item hover-float">
+            <a href="#" class="social-link neon-effect">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
-          <li class="social-item">
-            <a href="#" class="social-link">
+          <li class="social-item hover-float">
+            <a href="#" class="social-link neon-effect">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -170,23 +172,27 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link nav-item gradient-text active" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link nav-item" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link nav-item" data-nav-link>Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link nav-item" data-nav-link>Blog</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link nav-item" data-nav-link>Contact</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link nav-item" data-nav-link>Services</button>
           </li>
 
         </ul>
@@ -204,10 +210,10 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title gradient-text">About me</h2>
         </header>
 
-        <section class="about-text">
+        <section class="about-text section-animate">
           <p>
             I am a geospatial software Developer with a strong background in geography,, geomatics, and software development. My expertise lies in creating innovative solutions that combine geospatial data with modern technologies to solve real-world problems.
           </p>
@@ -230,13 +236,13 @@
           - service
         -->
 
-        <section class="service">
+        <section class="service section-animate">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title gradient-text">What i'm doing</h3>
 
           <ul class="service-list">
 
-            <li class="service-item">
+            <li class="service-item card-hover glow-effect">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg
@@ -253,7 +259,7 @@
 
             </li>
 
-            <li class="service-item">
+            <li class="service-item card-hover glow-effect">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
@@ -269,7 +275,7 @@
 
             </li>
 
-            <li class="service-item">
+            <li class="service-item card-hover glow-effect">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
@@ -285,7 +291,7 @@
 
             </li>
 
-            <li class="service-item">
+            <li class="service-item card-hover glow-effect">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
@@ -310,13 +316,13 @@
           - testimonials
         -->
 
-        <section class="testimonials">
+        <section class="testimonials section-animate">
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 class="h3 testimonials-title gradient-text">Testimonials</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
-            <li class="testimonials-item">
+            <li class="testimonials-item card-hover glow-effect">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
@@ -353,7 +359,7 @@ J’ai mené des recherches sur l’application de la géostatistique en géogra
               </div>
             </li>
 
-            <li class="testimonials-item">
+            <li class="testimonials-item card-hover glow-effect">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
@@ -387,7 +393,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </div>
             </li>
 
-            <li class="testimonials-item">
+            <li class="testimonials-item card-hover glow-effect">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
@@ -409,7 +415,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </div>
             </li>
 
-            <li class="testimonials-item">
+            <li class="testimonials-item card-hover glow-effect">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
@@ -481,43 +487,43 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
           - clients
         -->
 
-        <section class="clients">
+        <section class="clients section-animate">
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 clients-title gradient-text">Clients</h3>
 
           <ul class="clients-list has-scrollbar">
 
-            <li class="clients-item">
+            <li class="clients-item card-hover">
               <a href="#">
                 <img src="./assets/images/logo-1-color.png" alt="client logo">
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="clients-item card-hover">
               <a href="#">
                 <img src="./assets/images/logo-2-color.png" alt="client logo">
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="clients-item card-hover">
               <a href="#">
                 <img src="./assets/images/logo-3-color.png" alt="client logo">
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="clients-item card-hover">
               <a href="#">
                 <img src="./assets/images/logo-4-color.png" alt="client logo">
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="clients-item card-hover">
               <a href="#">
                 <img src="./assets/images/logo-5-color.png" alt="client logo">
               </a>
             </li>
 
-            <li class="clients-item">
+            <li class="clients-item card-hover">
               <a href="#">
                 <img src="./assets/images/logo-6-color.png" alt="client logo">
               </a>
@@ -543,7 +549,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
-        <section class="timeline">
+        <section class="timeline section-animate">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -586,7 +592,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               <span>2024-2025</span>
 
               <p class="timeline-text">
-                J’ai poursuivi mes études avec un Master 1 en QSE/RSE (Qualité, Sécurité, Environnement / Responsabilité Sociétale des Entreprises) et Géomatique, une formation qui m’a permis de combiner des compétences techniques et environnementales. Ce parcours m’a appris à intégrer les enjeux de durabilité, de sécurité et de responsabilité sociale dans la gestion des projets tout en appliquant les technologies géomatiques pour l’analyse spatiale, la gestion des ressources naturelles et la cartographie. Ce double cursus m'a fourni une vision globale des défis actuels, alliant la rigueur technique de la géomatique aux impératifs de développement durable.
+                J'ai poursuivi mes études avec un Master 1 en QSE/RSE (Qualité, Sécurité, Environnement / Responsabilité Sociétale des Entreprises) et Géomatique, une formation qui m'a permis de combiner des compétences techniques et environnementales. Ce parcours m'a appris à intégrer les enjeux de durabilité, de sécurité et de responsabilité sociale dans la gestion des projets tout en appliquant les technologies géomatiques pour l'analyse spatiale, la gestion des ressources naturelles et la cartographie. Ce double cursus m'a fourni une vision globale des défis actuels, alliant la rigueur technique de la géomatique aux impératifs de développement durable.
               </p>
 
             </li>
@@ -595,7 +601,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
 
         </section>
 
-        <section class="timeline">
+        <section class="timeline section-animate">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -614,7 +620,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               <span>2023 — Present</span>
 
               <p class="timeline-text">
-                Je suis développeur Flutter depuis 2023, une technologie que j’ai rapidement adoptée pour créer des applications mobiles modernes et performantes. Grâce à Flutter, j’ai pu développer des applications multiplateformes en un temps record, offrant des interfaces utilisateur fluides et réactives. Mon expertise en Flutter s’est enrichie au fil de projets pratiques, et j'ai même écrit un livre détaillé sur Flutter pour aider d'autres développeurs à maîtriser ce framework. Ce parcours a renforcé mes compétences en développement mobile et a ajouté une nouvelle dimension à mon expertise technique.
+                Je suis développeur Flutter depuis 2023, une technologie que j'ai rapidement adoptée pour créer des applications mobiles modernes et performantes. Grâce à Flutter, j'ai pu développer des applications multiplateformes en un temps record, offrant des interfaces utilisateur fluides et réactives. Mon expertise en Flutter s'est enrichie au fil de projets pratiques, et j'ai même écrit un livre détaillé sur Flutter pour aider d'autres développeurs à maîtriser ce framework. Ce parcours a renforcé mes compétences en développement mobile et a ajouté une nouvelle dimension à mon expertise technique.
               </p>
 
             </li>
@@ -626,7 +632,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               <span>2023-present</span>
 
               <p class="timeline-text">
-                Je suis développeur d'applications géospatiales depuis 2023, une spécialité dans laquelle j’ai pu allier mes connaissances en géomatique et mes compétences en développement logiciel. Grâce à des outils comme QGIS, ArcGIS, et des technologies telles que Python, j’ai créé des applications permettant de traiter et d'analyser des données géographiques, de visualiser des cartes interactives et d'intégrer des informations géospatiales dans des solutions logicielles complexes. Mon objectif est de fournir des outils puissants pour la gestion et l’analyse des données spatiales, en combinant performance, précision et facilité d’utilisation.
+                Je suis développeur d'applications géospatiales depuis 2023, une spécialité dans laquelle j'ai pu allier mes connaissances en géomatique et mes compétences en développement logiciel. Grâce à des outils comme QGIS, ArcGIS, et des technologies telles que Python, j'ai créé des applications permettant de traiter et d'analyser des données géographiques, de visualiser des cartes interactives et d'intégrer des informations géospatiales dans des solutions logicielles complexes. Mon objectif est de fournir des outils puissants pour la gestion et l'analyse des données spatiales, en combinant performance, précision et facilité d'utilisation.
               </p>
 
             </li>
@@ -638,7 +644,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               <span>2023 — present</span>
 
               <p class="timeline-text">
-                Je suis développeur de site web depuis 2023, et depuis lors, j’ai acquis une solide expérience dans la création de sites web dynamiques et modernes. En utilisant des technologies telles que HTML, CSS, JavaScript, PHP, ainsi que des frameworks comme React et Bootstrap, j’ai développé des solutions web responsives, optimisées et esthétiques. Mon approche consiste à allier une bonne expérience utilisateur à des performances élevées, en créant des sites interactifs et faciles à utiliser. J’ai également travaillé sur des projets e-commerce et des applications web complexes, offrant ainsi des solutions sur mesure pour chaque besoin spécifique.
+                Je suis développeur de site web depuis 2023, et depuis lors, j'ai acquis une solide expérience dans la création de sites web dynamiques et modernes. En utilisant des technologies telles que HTML, CSS, JavaScript, PHP, ainsi que des frameworks comme React et Bootstrap, j'ai développé des solutions web responsives, optimisées et esthétiques. Mon approche consiste à allier une bonne expérience utilisateur à des performances élevées, en créant des sites interactifs et faciles à utiliser. J'ai également travaillé sur des projets e-commerce et des applications web complexes, offrant ainsi des solutions sur mesure pour chaque besoin spécifique.
               </p>
 
             </li>
@@ -647,7 +653,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
 
         </section>
 
-        <section class="skill">
+        <section class="skill section-animate">
 
           <h3 class="h3 skills-title">My skills</h3>
 
@@ -725,24 +731,24 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
 
-        <section class="projects">
+        <section class="projects section-animate">
 
           <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active button-animate" data-filter-btn>All</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button class="button-animate" data-filter-btn>Web development</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button class="button-animate" data-filter-btn>Applications</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button class="button-animate" data-filter-btn>Web design</button>
             </li>
 
           </ul>
@@ -766,7 +772,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Web development</button>
               </li>
 
               <li class="select-item">
@@ -774,7 +780,7 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Web design</button>
               </li>
 
             </ul>
@@ -783,10 +789,10 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active card-hover" data-filter-item data-category="web development">
               <a href="#">
 
-                <figure class="project-img">
+                <figure class="project-img image-zoom">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -801,10 +807,10 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active card-hover" data-filter-item data-category="web development">
               <a href="#">
 
-                <figure class="project-img">
+                <figure class="project-img image-zoom">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -819,10 +825,10 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item active card-hover" data-filter-item data-category="web design">
               <a href="#">
 
-                <figure class="project-img">
+                <figure class="project-img image-zoom">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -837,10 +843,10 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item active card-hover" data-filter-item data-category="applications">
               <a href="#">
 
-                <figure class="project-img">
+                <figure class="project-img image-zoom">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -855,10 +861,10 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item active card-hover" data-filter-item data-category="web design">
               <a href="#">
 
-                <figure class="project-img">
+                <figure class="project-img image-zoom">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -873,10 +879,10 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item active card-hover" data-filter-item data-category="web design">
               <a href="#">
 
-                <figure class="project-img">
+                <figure class="project-img image-zoom">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -891,10 +897,10 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active card-hover" data-filter-item data-category="web development">
               <a href="#">
 
-                <figure class="project-img">
+                <figure class="project-img image-zoom">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -909,10 +915,10 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item active card-hover" data-filter-item data-category="applications">
               <a href="#">
 
-                <figure class="project-img">
+                <figure class="project-img image-zoom">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -927,10 +933,10 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active card-hover" data-filter-item data-category="web development">
               <a href="#">
 
-                <figure class="project-img">
+                <figure class="project-img image-zoom">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -1192,19 +1198,81 @@ Bref, Maxime est un développeur exceptionnel, toujours à la recherche de nouve
 
       </article>
 
+      <!--
+        - #SERVICES
+      -->
+      <article class="services" data-page="services">
+
+        <header>
+          <h2 class="h2 article-title gradient-text">Services</h2>
+        </header>
+
+        <section class="service-cards">
+          
+          <!-- Basic Plan -->
+          <div class="service-card card-hover glow-effect gradient-border">
+            <h3 class="card-title">Basic Consultation</h3>
+            <p class="price">$50</p>
+            <ul class="features">
+              <li>30-minute consultation</li>
+              <li>Basic code review</li>
+              <li>Email support</li>
+            </ul>
+            <button class="stripe-button" data-price-id="price_basic">
+              Pay Now
+            </button>
+          </div>
+
+          <!-- Standard Plan -->
+          <div class="service-card card-hover glow-effect gradient-border">
+            <h3 class="card-title">Standard Package</h3>
+            <p class="price">$150</p>
+            <ul class="features">
+              <li>1-hour consultation</li>
+              <li>Detailed code review</li>
+              <li>Basic project setup</li>
+              <li>Priority email support</li>
+            </ul>
+            <button class="stripe-button" data-price-id="price_standard">
+              Pay Now
+            </button>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="service-card card-hover glow-effect gradient-border">
+            <h3 class="card-title">Premium Package</h3>
+            <p class="price">$300</p>
+            <ul class="features">
+              <li>2-hour consultation</li>
+              <li>Complete code review</li>
+              <li>Full project setup</li>
+              <li>24/7 priority support</li>
+              <li>3 months follow-up</li>
+            </ul>
+            <button class="stripe-button" data-price-id="price_premium">
+              Pay Now
+            </button>
+          </div>
+
+        </section>
+
+      </article>
+
     </div>
 
   </main>
 
-
-
-
-
+  <!-- Stripe JS -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="./assets/js/payment.js"></script>
 
   <!--
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/contact-form.js"></script>
+  <script src="./assets/js/animations.js"></script>
+  <script src="./assets/js/particles.js"></script>
 
   <!--
     - ionicon link

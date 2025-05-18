@@ -1,0 +1,536 @@
+/* Animations pour le portfolio */
+
+/* Variables de couleurs */
+:root {
+    --gradient-1: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+    --gradient-2: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    --gradient-3: linear-gradient(60deg, #5f27cd, #341f97, #227093, #218c74);
+    --neon-shadow: 0 0 10px rgba(0, 255, 255, 0.5),
+                   0 0 20px rgba(0, 255, 255, 0.3),
+                   0 0 30px rgba(0, 255, 255, 0.1);
+}
+
+/* Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scale In */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Slide In Right */
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Smooth Hover */
+@keyframes smoothHover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Animation de dégradé fluide */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Typing Effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor Blink */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Animation de bordure arc-en-ciel */
+@keyframes borderRainbow {
+    0% { border-color: #ff6b6b; }
+    25% { border-color: #feca57; }
+    50% { border-color: #48dbfb; }
+    75% { border-color: #1dd1a1; }
+    100% { border-color: #ff6b6b; }
+}
+
+/* Animation de texte arc-en-ciel */
+@keyframes textRainbow {
+    0% { color: #ff6b6b; }
+    25% { color: #feca57; }
+    50% { color: #48dbfb; }
+    75% { color: #1dd1a1; }
+    100% { color: #ff6b6b; }
+}
+
+/* Animation de halo lumineux */
+@keyframes glowPulse {
+    0% { box-shadow: 0 0 5px rgba(0, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(0, 255, 255, 0.5); }
+}
+
+/* Animation de texte arc-en-ciel */
+@keyframes textRainbow {
+    0% { color: #ff6b6b; }
+    25% { color: #feca57; }
+    50% { color: #48dbfb; }
+    75% { color: #1dd1a1; }
+    100% { color: #ff6b6b; }
+}
+
+/* Effet de particules scintillantes */
+@keyframes sparkle {
+    0% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0); }
+}
+
+/* Classes d'animation réutilisables */
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+.hover-float {
+    transition: transform 0.3s ease;
+}
+
+.hover-float:hover {
+    transform: translateY(-5px);
+}
+
+.gradient-text {
+    background: var(--gradient-1);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+.gradient-border {
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    animation: borderRainbow 3s linear infinite;
+}
+
+.rainbow-text {
+    animation: textRainbow 3s linear infinite;
+}
+
+.glow-effect {
+    animation: glowPulse 2s ease-in-out infinite;
+}
+
+.gradient-bg {
+    background: var(--gradient-2);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+.neon-effect {
+    text-shadow: var(--neon-shadow);
+    animation: glowPulse 2s ease-in-out infinite;
+}
+
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 0;
+    animation: 
+        typing 3.5s steps(40, end) forwards,
+        blink 0.75s step-end infinite;
+}
+
+/* Animations pour les sections */
+.section-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.section-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animations pour les cartes et conteneurs */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation de progression des compétences */
+.skill-progress {
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+.skill-progress.animate {
+    width: var(--progress);
+}
+
+/* Animation de chargement élégante */
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Animation pour le menu de navigation */
+.nav-item {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* Animation pour les boutons */
+.button-animate {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.button-animate::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.button-animate:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.button-animate::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: sparkle 1s ease-in-out infinite;
+}
+
+/* Animation pour les images */
+.image-zoom {
+    overflow: hidden;
+}
+
+.image-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.image-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* Nouvelles classes d'animation */
+.service-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: var(--gradient-1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    border-radius: inherit;
+}
+
+.service-item:hover::before {
+    opacity: 0.1;
+}
+
+.project-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,107,107,0.2), rgba(254,202,87,0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-img:hover::after {
+    opacity: 1;
+}
+
+/* Animation spéciale pour les titres de section */
+.article-title {
+    position: relative;
+}
+
+.article-title::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gradient-1);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+/* Animation pour les cartes de service */
+.service-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-3);
+    background-size: 400% 400%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card:hover::before {
+    opacity: 0.1;
+}
+
+/* Animation pour les compétences */
+.skill-progress-fill {
+    background: var(--gradient-1);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+/* Animation pour le menu de navigation */
+.navbar-link.active {
+    position: relative;
+    color: transparent;
+    background: var(--gradient-1);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+/* Animation pour les icônes sociales */
+.social-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link:hover {
+    animation: glowPulse 2s ease-in-out infinite;
+}
+
+/* Animation pour le formulaire de contact */
+.form-input:focus {
+    border-color: transparent;
+    background: linear-gradient(#fff, #fff) padding-box,
+                var(--gradient-1) border-box;
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+/* Effet de scintillement pour les images */
+.portfolio-image {
+    position: relative;
+}
+
+.portfolio-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transform: skewX(-25deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    20% { left: 100%; }
+    100% { left: 100%; }
+}
+
+/* Animation de fond dynamique */
+.main-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(255, 107, 107, 0.05) 0%, transparent 20%),
+        radial-gradient(circle at 90% 50%, rgba(254, 202, 87, 0.05) 0%, transparent 20%),
+        radial-gradient(circle at 30% 80%, rgba(72, 219, 251, 0.05) 0%, transparent 20%);
+    animation: backgroundMove 20s ease infinite;
+    z-index: -1;
+}
+
+@keyframes backgroundMove {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Effet de particules pour le fond */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: particleFloat 20s infinite linear;
+}
+
+@keyframes particleFloat {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100vh) translateX(100vw);
+        opacity: 0;
+    }
+} 

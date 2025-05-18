@@ -1,0 +1,70 @@
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: var(--border-gradient-onyx);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: var(--white-2);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-700);
+  margin-bottom: 15px;
+}
+
+.price {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-700);
+  margin-bottom: 20px;
+}
+
+.features {
+  margin-bottom: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.features li::before {
+  content: "✓";
+  color: var(--orange-yellow-crayola);
+  margin-right: 10px;
+}
+
+.stripe-button {
+  background: var(--orange-yellow-crayola);
+  color: var(--eerie-black-1);
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.stripe-button:hover {
+  background: var(--vegas-gold);
+} 
